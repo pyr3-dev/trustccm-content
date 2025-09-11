@@ -157,271 +157,203 @@
 
     </div>
   </section>
-  <section id="advisory" class="relative overflow-hidden py-20 md:py-28 bg-slate-50">
-    <!-- Decorative background -->
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-      <div class="absolute -top-40 -right-24 h-80 w-80 rounded-full bg-gradient-to-tr from-blue-500/10 via-indigo-500/10 to-purple-500/10 blur-3xl"></div>
-      <div class="absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-gradient-to-br from-cyan-400/10 via-sky-500/10 to-blue-600/10 blur-3xl"></div>
-    </div>
-
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <section id="advisory" class="relative overflow-hidden py-20 md:py-28 bg-slate-50 text-slate-900">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <!-- Headline -->
       <header class="max-w-3xl" data-aos="fade-up" data-aos-duration="700">
-        <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 shadow-sm backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-blue-600"></span>
-          Advisory & Growth
+        <span class="inline-block text-xs font-semibold bg-[#a78bfa]/20 text-[#a78bfa] px-3 py-1 rounded-full mb-3">
+          Advisory
         </span>
-        <h2 class="mt-4 text-3xl md:text-5xl font-semibold tracking-tight text-slate-900">
-          Advisory Services: Helping Small Businesses Scale
-        </h2>
-        <p class="mt-3 text-lg text-slate-600">
-          From audit to growth — complete business development and marketing support.
-        </p>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Advisory Services: Helping Small Businesses Scale</h2>
+        <p class="mt-3 text-lg text-slate-600">From audit to growth — complete business development and marketing support.</p>
       </header>
 
-      <!-- Intro Paragraph -->
+      <!-- Intro -->
       <p class="mt-6 max-w-3xl text-slate-700 leading-relaxed" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
         At TrustCCM, we help small businesses unlock growth by combining financial and online presence audits with tailored business development strategies. Our end-to-end advisory solutions are designed to increase revenue, boost engagement, and position your brand for long-term success.
       </p>
 
-      <!-- Content Blocks -->
+      <!-- Content Cards -->
       <div class="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- 1. Business Audit -->
-        <div class="group relative rounded-2xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200 backdrop-blur transition hover:shadow-lg hover:-translate-y-0.5"
-          data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
-          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent"></div>
+        <!-- Card 1 -->
+        <div class="group relative rounded-2xl bg-white p-6 shadow-md ring-1 ring-slate-200 hover:shadow-lg transition"
+          data-aos="fade-up" data-aos-delay="0">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#a78bfa]/40 to-transparent"></div>
           <div class="flex items-center gap-3">
-            <?php // Clipboard/Audit icon 
-            ?>
-            <div class="grid h-12 w-12 place-items-center rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-100 group-hover:bg-blue-100 transition">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+            <div class="grid h-11 w-11 place-items-center rounded-lg bg-[#a78bfa]/10 text-[#a78bfa] ring-1 ring-[#a78bfa]/30">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <rect x="5" y="3" width="14" height="18" rx="2" />
                 <path d="M9 7h6M8 11h8M8 15h5" />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-slate-900">Business Audit</h3>
+            <h3 class="text-xl font-semibold">Business Audit</h3>
           </div>
-          <p class="mt-3 text-slate-600">We review financial performance, online presence, and brand positioning, then benchmark you against competitors to uncover quick wins and long-term opportunities.</p>
-          <ul class="mt-4 space-y-1 text-slate-700">
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-blue-600"></span> Financial performance review</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-blue-600"></span> Online presence & brand positioning check</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-blue-600"></span> Competitor benchmarking</li>
-          </ul>
+          <p class="mt-3 text-slate-600">We review financial performance, online presence, and brand positioning, then benchmark you against competitors.</p>
         </div>
 
-        <!-- 2. Content & Engagement -->
-        <div class="group relative rounded-2xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200 backdrop-blur transition hover:shadow-lg hover:-translate-y-0.5"
-          data-aos="fade-up" data-aos-delay="75" data-aos-duration="700">
-          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent"></div>
+        <!-- Card 2 -->
+        <div class="group relative rounded-2xl bg-white p-6 shadow-md ring-1 ring-slate-200 hover:shadow-lg transition"
+          data-aos="fade-up" data-aos-delay="75">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#a78bfa]/40 to-transparent"></div>
           <div class="flex items-center gap-3">
-            <?php // Pen/Content icon 
-            ?>
-            <div class="grid h-12 w-12 place-items-center rounded-xl bg-indigo-50 text-indigo-700 ring-1 ring-indigo-100 group-hover:bg-indigo-100 transition">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <div class="grid h-11 w-11 place-items-center rounded-lg bg-[#a78bfa]/10 text-[#a78bfa] ring-1 ring-[#a78bfa]/30">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                 <path d="M12 19l9-9-3-3-9 9-3 1 1-3 9-9" />
                 <path d="M16 5l3 3" />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-slate-900">Content & Engagement</h3>
+            <h3 class="text-xl font-semibold">Content & Engagement</h3>
           </div>
-          <p class="mt-3 text-slate-600">Plan content that matches your brand voice and convert casual visitors into active followers through consistent messaging and community engagement.</p>
-          <ul class="mt-4 space-y-1 text-slate-700">
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span> Content creation planning</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span> Guidance for brand voice & messaging</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span> Increasing audience engagement</li>
-          </ul>
+          <p class="mt-3 text-slate-600">Plan content that matches your brand voice and turn casual visitors into active followers.</p>
         </div>
 
-        <!-- 3. Digital Marketing & Social Media -->
-        <div class="group relative rounded-2xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200 backdrop-blur transition hover:shadow-lg hover:-translate-y-0.5"
-          data-aos="fade-up" data-aos-delay="150" data-aos-duration="700">
-          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-violet-500/40 to-transparent"></div>
+        <!-- Card 3 -->
+        <div class="group relative rounded-2xl bg-white p-6 shadow-md ring-1 ring-slate-200 hover:shadow-lg transition"
+          data-aos="fade-up" data-aos-delay="150">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#a78bfa]/40 to-transparent"></div>
           <div class="flex items-center gap-3">
-            <?php // Megaphone/Marketing icon 
-            ?>
-            <div class="grid h-12 w-12 place-items-center rounded-xl bg-violet-50 text-violet-700 ring-1 ring-violet-100 group-hover:bg-violet-100 transition">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <div class="grid h-11 w-11 place-items-center rounded-lg bg-[#a78bfa]/10 text-[#a78bfa] ring-1 ring-[#a78bfa]/30">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                 <path d="M3 11l12-5v12L3 13v-2z" />
                 <path d="M15 8a4 4 0 0 0 0 8" />
                 <path d="M6 14l1.5 4.5a2 2 0 0 0 2.5 1.3L12 19" />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-slate-900">Digital Marketing & Social Media</h3>
+            <h3 class="text-xl font-semibold">Digital Marketing & Social Media</h3>
           </div>
-          <p class="mt-3 text-slate-600">Combine organic and paid strategies to reach your ideal audience. We manage channels, optimize ad spend, and explore partnerships to expand your reach.</p>
-          <ul class="mt-4 space-y-1 text-slate-700">
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-violet-600"></span> Social media management</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-violet-600"></span> Paid ads & organic growth strategy</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-violet-600"></span> Influencer & collaboration opportunities</li>
-          </ul>
+          <p class="mt-3 text-slate-600">We combine organic and paid strategies to expand your reach and optimize ROI.</p>
         </div>
 
-        <!-- 4. Website & SEO Optimization -->
-        <div class="group relative rounded-2xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200 backdrop-blur transition hover:shadow-lg hover:-translate-y-0.5"
-          data-aos="fade-up" data-aos-delay="225" data-aos-duration="700">
-          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-sky-500/40 to-transparent"></div>
+        <!-- Card 4 -->
+        <div class="group relative rounded-2xl bg-white p-6 shadow-md ring-1 ring-slate-200 hover:shadow-lg transition"
+          data-aos="fade-up" data-aos-delay="225">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#a78bfa]/40 to-transparent"></div>
           <div class="flex items-center gap-3">
-            <?php // Gauge/Optimization icon 
-            ?>
-            <div class="grid h-12 w-12 place-items-center rounded-xl bg-sky-50 text-sky-700 ring-1 ring-sky-100 group-hover:bg-sky-100 transition">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <div class="grid h-11 w-11 place-items-center rounded-lg bg-[#a78bfa]/10 text-[#a78bfa] ring-1 ring-[#a78bfa]/30">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                 <path d="M12 21a9 9 0 1 1 9-9" />
                 <path d="M12 12l5-2" />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-slate-900">Website & SEO Optimization</h3>
+            <h3 class="text-xl font-semibold">Website & SEO Optimization</h3>
           </div>
-          <p class="mt-3 text-slate-600">Audit site performance, improve search visibility, and streamline conversion paths to turn more visitors into leads and customers.</p>
-          <ul class="mt-4 space-y-1 text-slate-700">
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-600"></span> Website performance audit</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-600"></span> SEO & keyword positioning</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-600"></span> Conversion optimization</li>
-          </ul>
+          <p class="mt-3 text-slate-600">We improve site speed, SEO, and conversion paths to maximize business growth.</p>
         </div>
 
-        <!-- 5. Lead Generation & Growth Strategy -->
-        <div class="group relative rounded-2xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200 backdrop-blur transition hover:shadow-lg hover:-translate-y-0.5 lg:col-span-2"
-          data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
-          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-fuchsia-500/40 to-transparent"></div>
+        <!-- Card 5 -->
+        <div class="group relative rounded-2xl bg-white p-6 shadow-md ring-1 ring-slate-200 hover:shadow-lg transition lg:col-span-2"
+          data-aos="fade-up" data-aos-delay="300">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#a78bfa]/40 to-transparent"></div>
           <div class="flex items-center gap-3">
-            <?php // Target/Leads icon 
-            ?>
-            <div class="grid h-12 w-12 place-items-center rounded-xl bg-fuchsia-50 text-fuchsia-700 ring-1 ring-fuchsia-100 group-hover:bg-fuchsia-100 transition">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <div class="grid h-11 w-11 place-items-center rounded-lg bg-[#a78bfa]/10 text-[#a78bfa] ring-1 ring-[#a78bfa]/30">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="8" />
                 <circle cx="12" cy="12" r="3" />
                 <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-slate-900">Lead Generation & Growth Strategy</h3>
+            <h3 class="text-xl font-semibold">Lead Generation & Growth Strategy</h3>
           </div>
-          <p class="mt-3 text-slate-600">Design end-to-end funnels and sales support that scale with you, culminating in a clear, actionable roadmap for sustainable growth.</p>
-          <ul class="mt-4 space-y-1 text-slate-700">
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-fuchsia-600"></span> End-to-end marketing funnels</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-fuchsia-600"></span> Sales strategy support</li>
-            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-fuchsia-600"></span> Long-term growth roadmap</li>
-          </ul>
+          <p class="mt-3 text-slate-600">We design scalable funnels and a roadmap for long-term sustainable growth.</p>
         </div>
       </div>
 
-      <!-- Process Flow Diagram (HTML-only, column on mobile; row on md+) -->
-      <div class="mt-14" data-aos="fade-up" data-aos-duration="700">
-        <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-700">How We Work</h4>
-
+      <!-- Process Flow -->
+      <div class="mt-14" data-aos="fade-up" data-aos-delay="120">
+        <h4 class="text-sm font-semibold uppercase tracking-wider text-[#a78bfa]">How We Work</h4>
         <div class="mt-4">
-          <!-- Column on mobile; row on md+ -->
-          <div class="flex flex-col md:flex-row items-stretch gap-3 py-3 px-2 rounded-2xl bg-white/90 ring-1 ring-slate-200 shadow-sm md:overflow-x-auto">
+          <div class="flex flex-col md:flex-row items-stretch gap-3 py-3 px-2 rounded-2xl bg-white ring-1 ring-slate-200 shadow-sm">
             <!-- Step 1 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-blue-200 bg-blue-50 p-4" data-aos="fade-up" data-aos-delay="0">
-              <div class="text-xs font-semibold text-blue-700 tracking-wide uppercase">Step 1</div>
-              <div class="mt-1 text-base font-semibold text-blue-900">Audit</div>
-              <p class="mt-1 text-sm text-blue-800/80">Baseline review and priorities.</p>
+            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 1</div>
+              <div class="mt-1 text-base font-semibold text-slate-900">Audit</div>
+              <p class="mt-1 text-sm text-slate-600">Baseline review and priorities.</p>
             </div>
-
-            <!-- Arrow: down on mobile, right on desktop -->
-            <div class="grid place-items-center md:px-1" aria-hidden="true">
-              <!-- Mobile (down) -->
-              <svg class="h-6 w-6 text-slate-500 md:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <!-- Arrow -->
+            <div class="grid place-items-center md:px-1">
+              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <!-- Desktop (right) -->
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
-
             <!-- Step 2 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-indigo-200 bg-indigo-50 p-4" data-aos="fade-up" data-aos-delay="80">
-              <div class="text-xs font-semibold text-indigo-700 tracking-wide uppercase">Step 2</div>
-              <div class="mt-1 text-base font-semibold text-indigo-900">Content</div>
-              <p class="mt-1 text-sm text-indigo-800/80">Messaging & assets plan.</p>
+            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 2</div>
+              <div class="mt-1 text-base font-semibold text-slate-900">Content</div>
+              <p class="mt-1 text-sm text-slate-600">Messaging & assets plan.</p>
             </div>
-
             <!-- Arrow -->
-            <div class="grid place-items-center md:px-1" aria-hidden="true">
-              <svg class="h-6 w-6 text-slate-500 md:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="grid place-items-center md:px-1">
+              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
-
             <!-- Step 3 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-violet-200 bg-violet-50 p-4" data-aos="fade-up" data-aos-delay="160">
-              <div class="text-xs font-semibold text-violet-700 tracking-wide uppercase">Step 3</div>
-              <div class="mt-1 text-base font-semibold text-violet-900">Marketing</div>
-              <p class="mt-1 text-sm text-violet-800/80">Organic + paid rollout.</p>
+            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 3</div>
+              <div class="mt-1 text-base font-semibold text-slate-900">Marketing</div>
+              <p class="mt-1 text-sm text-slate-600">Organic + paid rollout.</p>
             </div>
-
             <!-- Arrow -->
-            <div class="grid place-items-center md:px-1" aria-hidden="true">
-              <svg class="h-6 w-6 text-slate-500 md:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="grid place-items-center md:px-1">
+              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
-
             <!-- Step 4 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-cyan-200 bg-cyan-50 p-4" data-aos="fade-up" data-aos-delay="240">
-              <div class="text-xs font-semibold text-cyan-700 tracking-wide uppercase">Step 4</div>
-              <div class="mt-1 text-base font-semibold text-cyan-900">Optimization</div>
-              <p class="mt-1 text-sm text-cyan-800/80">SEO, CRO & speed.</p>
+            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 4</div>
+              <div class="mt-1 text-base font-semibold text-slate-900">Optimization</div>
+              <p class="mt-1 text-sm text-slate-600">SEO, CRO & speed.</p>
             </div>
-
             <!-- Arrow -->
-            <div class="grid place-items-center md:px-1" aria-hidden="true">
-              <svg class="h-6 w-6 text-slate-500 md:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="grid place-items-center md:px-1">
+              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
-
             <!-- Step 5 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-pink-200 bg-pink-50 p-4" data-aos="fade-up" data-aos-delay="320">
-              <div class="text-xs font-semibold text-pink-700 tracking-wide uppercase">Step 5</div>
-              <div class="mt-1 text-base font-semibold text-pink-900">Lead Gen</div>
-              <p class="mt-1 text-sm text-pink-800/80">Funnels & scale.</p>
+            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 5</div>
+              <div class="mt-1 text-base font-semibold text-slate-900">Lead Gen</div>
+              <p class="mt-1 text-sm text-slate-600">Funnels & scale.</p>
             </div>
           </div>
         </div>
-
-        <!-- Mobile helper text -->
-        <p class="mt-2 text-xs text-slate-500 md:hidden">Steps display vertically on mobile for easier reading.</p>
       </div>
 
-      <!-- CTA Buttons -->
-      <div class="mt-12 flex flex-col sm:flex-row gap-3" data-aos="fade-up" data-aos-delay="150" data-aos-duration="700">
-        <a href="/book-audit" class="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-white font-medium shadow transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M8 12h8M12 8v8" />
-            <circle cx="12" cy="12" r="9" />
-          </svg>
+      <!-- CTAs -->
+      <div class="mt-12 flex flex-col sm:flex-row gap-3" data-aos="fade-up" data-aos-delay="150">
+        <a href="<?php echo home_url('/book-audit'); ?>" class="inline-flex items-center justify-center rounded-md bg-[#ca8a04] px-6 py-3 text-white font-semibold shadow hover:bg-[#a16207]">
           Book Your Free Audit
         </a>
-        <a href="/advisory" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white/70 px-6 py-3 text-slate-900 font-medium shadow-sm backdrop-blur transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2">
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M8 12h8" />
-            <path d="M12 8v8" opacity=".35" />
-            <circle cx="12" cy="12" r="9" />
-          </svg>
+        <a href="<?php echo home_url('/advisory'); ?>" class="inline-flex items-center justify-center rounded-md border border-slate-300 text-slate-700 px-6 py-3 font-semibold hover:bg-slate-100">
           Learn More About Advisory
         </a>
       </div>
     </div>
   </section>
+
+
 
 
   <section class="bg-gray-100 py-20 px-4">
