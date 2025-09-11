@@ -1,0 +1,357 @@
+/*
+Theme Name: Trustcmm Theme
+Author: Danny Boy Gomez
+Description: Trustcmm Theme
+Tags: fast-loading, one-sec, blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: trustcmm.com
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      color: white;
+    }
+
+
+
+    .site-logo img {
+      height: 90px;
+    }
+
+   
+
+    .hero-video-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video-wrapper nav {
+	z-index: 999 !important;
+	position: relative;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-cover-overlay {
+  position: absolute;
+  bottom: 0; /* Place at bottom */
+  left: 73.5%; /* Center horizontally */
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+  width: 100%;
+  text-align: center;
+}
+
+.video-cover-overlay img {
+  width: 52.5%;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  filter: grayscale(100%) brightness(1.1) contrast(1.1);
+  mix-blend-mode: lighten;
+}
+
+.scrolled .video-cover-overlay {
+  opacity: 0.1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  max-width: 600px;
+
+}
+
+.hero-meta {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.hero-buttons a.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-right: 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-dark {
+  background: #0a2540;
+  color: white;
+}
+
+.btn-dark:hover {
+  background: #061c33;
+}
+
+.btn-light {
+  background: #7a5af8;
+  color: white;
+}
+
+.btn-light:hover {
+  background: #6845f7;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+
+.stat-card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.stat-card img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 2px !important;
+}
+
+.stat-card strong {
+  font-size: 20px;
+  color: #ffcc44;
+}
+.container-video {
+  max-width: 1250px;
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.mega-menu-icons a {
+  color: white;
+}
+
+/* On hover */
+.mega-menu-icons a:hover {
+  color: #6845f7;
+}
+
+/* Active/current page */
+.mega-menu-icons .current-menu-item > a,
+.mega-menu-icons .current_page_item > a {
+  color: #efae00 !important;
+  font-weight: 600;
+}
+
+#mega-menu-icons ul li a, #mega-menu-icons ul li button, #mega-menu-icons ul li svg {
+	color: #FFFFFF;
+}
+
+nav a {
+	color: #FFFFFF !important;
+}
+
+nav a:hover {
+	color: #efae00 !important;
+}
+
+.sign-up-button:hover {
+	color: #FFFFFF !important;
+}
+
+div#mega-menu-icons-dropdown {
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 999 !important;
+    border:1px solid #222 !important;
+    border-radius: 5px !important;
+}
+
+div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
+	color: #FFFFFF !important;
+}
+
+#mega-menu-icons-dropdown a {
+  padding: 2px 7px !important;
+}
+
+.black-yellow {
+  background: #222;
+}
+
+.color-yellow {
+  color: #f1b73d;
+
+}
+
+.bg-yellow {
+  background: #f1b73d;
+}
+
+
+.book-a-discovery-btn {
+  background: #efae00 !important;
+  border-radius: 5.7px !important;
+}
+
+@keyframes grow-vert {
+  from { transform: scaleY(0); transform-origin: top; opacity:0; }
+  to   { transform: scaleY(1); opacity:1; }
+}
+
+[data-aos="grow-vert"] {
+  opacity: 0;
+  transform-origin: top;
+  &.aos-animate {
+    animation: grow-vert 0.8s ease-out forwards;
+  }
+}
+
+.about-page {
+  background: #333 !important;
+
+}
+
+.about-page h2,
+.about-page h3, 
+.about-page p,
+.about-page li {
+  color: #FFFFFF !important;
+}
+
+
+.services-page {
+  background: #333 !important;
+}
+
+
+.services-page p,
+.services-page li {
+  color: #333 !important;
+}
+
+.services-page h3 {
+  color: #333 !important;
+}
+
+.services-page h2 {
+  color: #FFFFFF !important;
+}
+
+.services-p-white {
+  color: #FFFFFF !important;
+}
+
+.contact-page input,
+.contact-page textarea,
+.contact-page select {
+  color: #333;
+}
+
+.menu-icon{
+  color: #FFFFFF !important;
+}
+
+.menu-icon:hover {
+  color: #333 !important;
+}
+
+.about-profile-pic {
+  filter: grayscale(100%);
+}
+
+.circle-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #9c6009;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+
+@media only screen and (max-width: 767px) {
+#mega-menu-icons ul li a:hover, #mega-menu-icons ul li button:hover, #mega-menu-icons ul li svg:hover {
+  background: rgba(0, 0, 0, 0.55) !important;
+  color: #fff !important;
+}
+
+.hero-text h1 {
+    font-size: 21px !important;
+}
+
+}
+
+
+body {
+  overflow-y:hidden;
+  min-width: 412px !important;
+  background: #333;
+}

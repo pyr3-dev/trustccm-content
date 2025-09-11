@@ -1,0 +1,13 @@
+
+/*
+
+!themes/
+themes/*
+!/themes/trustccm-theme-v1/
+
+
+!plugins/
+plugins/*
+!/plugins/trustccm-plugin-v1.3/
+
+!.gitignore
