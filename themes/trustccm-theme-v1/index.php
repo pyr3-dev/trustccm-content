@@ -13,7 +13,6 @@
     <?php require_once get_template_directory() . '/nav.php'; ?>
 
 
-
     <video autoplay muted loop playsinline class="hero-video">
       <source src="<?php echo get_template_directory_uri(); ?>/assets/background.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -26,7 +25,7 @@
 
     <div class="hero-overlay">
       <div class="container-video">
-        <div class="hero-grid">
+        <div class="grid gap-4 md:grid-columns-2">
           <!-- Left Content -->
           <div class="hero-text">
             <div class="hero-meta" data-aos="fade-right" data-aos-delay="100">50+ million in revenue generated for businesses</div>
@@ -78,7 +77,7 @@
 
 
   <section class="bg-[#686868] text-white py-20 px-4 md:px-16">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-2 items-start">
+    <div class="max-w-[90vw] mx-auto grid md:grid-cols-2 gap-10 items-start">
       <!-- <div data-aos="fade-up"> -->
       <div data-aos="fade-right">
         <span class="inline-block text-sm font-semibold bg-[#a16207] text-white px-3 py-1 rounded-full mb-4">Our Process</span>
@@ -262,77 +261,77 @@
       <div class="mt-14" data-aos="fade-up" data-aos-delay="120">
         <h4 class="text-sm font-semibold uppercase tracking-wider text-[#a78bfa]">How We Work</h4>
         <div class="mt-4">
-          <div class="flex flex-col md:flex-row items-stretch gap-3 py-3 px-2 rounded-2xl bg-white ring-1 ring-slate-200 shadow-sm">
+          <div class="flex flex-col xl:flex-row items-stretch gap-3 py-3 px-2 rounded-2xl bg-white ring-1 ring-slate-200 shadow-sm">
             <!-- Step 1 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+            <div class="w-full xl:min-w-[190px] xl:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
               <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 1</div>
               <div class="mt-1 text-base font-semibold text-slate-900">Audit</div>
               <p class="mt-1 text-sm text-slate-600">Baseline review and priorities.</p>
             </div>
             <!-- Arrow -->
-            <div class="grid place-items-center md:px-1">
-              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <div class="grid place-items-center xl:px-1">
+              <svg class="h-6 w-6 text-slate-500 xl:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="h-6 w-6 text-slate-500 hidden xl:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
             <!-- Step 2 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+            <div class="w-full xl:min-w-[190px] xl:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
               <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 2</div>
               <div class="mt-1 text-base font-semibold text-slate-900">Content</div>
               <p class="mt-1 text-sm text-slate-600">Messaging & assets plan.</p>
             </div>
             <!-- Arrow -->
-            <div class="grid place-items-center md:px-1">
-              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <div class="grid place-items-center xl:px-1">
+              <svg class="h-6 w-6 text-slate-500 xl:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="h-6 w-6 text-slate-500 hidden xl:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
             <!-- Step 3 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+            <div class="w-full xl:min-w-[190px] xl:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
               <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 3</div>
               <div class="mt-1 text-base font-semibold text-slate-900">Marketing</div>
               <p class="mt-1 text-sm text-slate-600">Organic + paid rollout.</p>
             </div>
             <!-- Arrow -->
-            <div class="grid place-items-center md:px-1">
-              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <div class="grid place-items-center xl:px-1">
+              <svg class="h-6 w-6 text-slate-500 xl:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="h-6 w-6 text-slate-500 hidden xl:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
             <!-- Step 4 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+            <div class="w-full xl:min-w-[190px] xl:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
               <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 4</div>
               <div class="mt-1 text-base font-semibold text-slate-900">Optimization</div>
               <p class="mt-1 text-sm text-slate-600">SEO, CRO & speed.</p>
             </div>
             <!-- Arrow -->
-            <div class="grid place-items-center md:px-1">
-              <svg class="h-6 w-6 text-slate-500 md:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <div class="grid place-items-center xl:px-1">
+              <svg class="h-6 w-6 text-slate-500 xl:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M12 5v14" />
                 <path d="M5 13l7 7 7-7" />
               </svg>
-              <svg class="h-6 w-6 text-slate-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="h-6 w-6 text-slate-500 hidden xl:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M5 12h14" />
                 <path d="M13 5l7 7-7 7" />
               </svg>
             </div>
             <!-- Step 5 -->
-            <div class="w-full md:min-w-[190px] md:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
+            <div class="w-full xl:min-w-[190px] xl:flex-1 rounded-xl border border-slate-300 bg-slate-50 p-4">
               <div class="text-xs font-semibold text-[#a78bfa] tracking-wide uppercase">Step 5</div>
               <div class="mt-1 text-base font-semibold text-slate-900">Lead Gen</div>
               <p class="mt-1 text-sm text-slate-600">Funnels & scale.</p>

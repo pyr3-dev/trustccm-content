@@ -14,37 +14,35 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+}
 
+.site-logo img {
+  height: 90px;
+}
 
-body, html {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      color: white;
-    }
-
-
-
-    .site-logo img {
-      height: 90px;
-    }
-
-   
-
-    .hero-video-wrapper {
+.hero-video-wrapper {
   position: relative;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .hero-video-wrapper nav {
-	z-index: 999 !important;
-	position: relative;
+  z-index: 999 !important;
+
+  position: relative;
 }
 
 .hero-video {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -80,6 +78,7 @@ body, html {
   position: relative;
   z-index: 3;
   height: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -96,8 +95,7 @@ body, html {
 }
 
 .hero-text {
-  max-width: 600px;
-
+  max-width: 100vw;
 }
 
 .hero-meta {
@@ -154,14 +152,26 @@ body, html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .container-video {
+    max-width: 100vw;
+
+    width: 100%;
+  }
 }
 
 .stat-card {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 7px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -181,10 +191,10 @@ body, html {
   color: #ffcc44;
 }
 .container-video {
-  max-width: 1250px;
+  max-width: 100vw;
   margin: 30px auto;
   padding: 0 20px;
-  width: 100%;
+  width: 70%;
 }
 
 .mega-menu-icons a {
@@ -203,31 +213,34 @@ body, html {
   font-weight: 600;
 }
 
-#mega-menu-icons ul li a, #mega-menu-icons ul li button, #mega-menu-icons ul li svg {
-	color: #FFFFFF;
+#mega-menu-icons ul li a,
+#mega-menu-icons ul li button,
+#mega-menu-icons ul li svg {
+  color: #ffffff;
 }
 
 nav a {
-	color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 nav a:hover {
-	color: #efae00 !important;
+  color: #efae00 !important;
 }
 
 .sign-up-button:hover {
-	color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 div#mega-menu-icons-dropdown {
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 999 !important;
-    border:1px solid #222 !important;
-    border-radius: 5px !important;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 999 !important;
+  border: 1px solid #222 !important;
+  border-radius: 5px !important;
 }
 
-div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
-	color: #FFFFFF !important;
+div#mega-menu-icons-dropdown a,
+div#mega-menu-icons-dropdown svg {
+  color: #ffffff !important;
 }
 
 #mega-menu-icons-dropdown a {
@@ -240,13 +253,11 @@ div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
 
 .color-yellow {
   color: #f1b73d;
-
 }
 
 .bg-yellow {
   background: #f1b73d;
 }
-
 
 .book-a-discovery-btn {
   background: #efae00 !important;
@@ -254,8 +265,15 @@ div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
 }
 
 @keyframes grow-vert {
-  from { transform: scaleY(0); transform-origin: top; opacity:0; }
-  to   { transform: scaleY(1); opacity:1; }
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
 [data-aos="grow-vert"] {
@@ -268,21 +286,18 @@ div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
 
 .about-page {
   background: #333 !important;
-
 }
 
 .about-page h2,
-.about-page h3, 
+.about-page h3,
 .about-page p,
 .about-page li {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
-
 
 .services-page {
   background: #333 !important;
 }
-
 
 .services-page p,
 .services-page li {
@@ -294,11 +309,11 @@ div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
 }
 
 .services-page h2 {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .services-p-white {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .contact-page input,
@@ -307,8 +322,8 @@ div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
   color: #333;
 }
 
-.menu-icon{
-  color: #FFFFFF !important;
+.menu-icon {
+  color: #ffffff !important;
 }
 
 .menu-icon:hover {
@@ -336,22 +351,22 @@ div#mega-menu-icons-dropdown a, div#mega-menu-icons-dropdown svg {
   object-fit: cover;
 }
 
-
 @media only screen and (max-width: 767px) {
-#mega-menu-icons ul li a:hover, #mega-menu-icons ul li button:hover, #mega-menu-icons ul li svg:hover {
-  background: rgba(0, 0, 0, 0.55) !important;
-  color: #fff !important;
-}
+  #mega-menu-icons ul li a:hover,
+  #mega-menu-icons ul li button:hover,
+  #mega-menu-icons ul li svg:hover {
+    background: rgba(0, 0, 0, 0.55) !important;
+    color: #fff !important;
+  }
 
-.hero-text h1 {
+  .hero-text h1 {
     font-size: 21px !important;
+  }
 }
-
-}
-
 
 body {
-  overflow-y:hidden;
-  min-width: 412px !important;
+  overflow-y: hidden;
+  min-width: 100vw !important;
+  max-width: 100vw;
   background: #333;
 }

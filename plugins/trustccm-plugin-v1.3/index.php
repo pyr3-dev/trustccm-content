@@ -10,7 +10,8 @@ Author: Danny Boy Gomez
 
 add_action('admin_menu', 'trccm_register_admin_menu');
 
-function trccm_register_admin_menu() {
+function trccm_register_admin_menu()
+{
     add_menu_page(
         'TRCCM Submissions',                // Page title
         'TRCCM Contacts',                   // Menu title
@@ -21,7 +22,7 @@ function trccm_register_admin_menu() {
         25                                 // Position
     );
 
-     add_submenu_page(
+    add_submenu_page(
         'trccm_contact_submissions',       // Parent slug
         'All Submissions',                 // Page title
         'All Submissions',                 // Submenu title
@@ -40,7 +41,7 @@ function trccm_register_admin_menu() {
         'trccm_render_settings_page'       // Callback function
     );
 
-     // ✅ Add this submenu for Newsletter Emails
+    // ✅ Add this submenu for Newsletter Emails
     add_submenu_page(
         'trccm_contact_submissions',
         'Newsletter Subscribers',
@@ -49,7 +50,6 @@ function trccm_register_admin_menu() {
         'trccm_newsletter_subscribers',
         'trccm_render_newsletter_page'
     );
-
 }
 
 
@@ -58,7 +58,8 @@ function trccm_register_admin_menu() {
 
 register_activation_hook(__FILE__, 'trccm_create_tables');
 
-function trccm_create_tables() {
+function trccm_create_tables()
+{
     global $wpdb;
     $charset_collate = $wpdb->get_charset_collate();
 
@@ -97,7 +98,8 @@ function trccm_create_tables() {
 add_action('wp_ajax_trccm_subscribe_newsletter', 'trccm_handle_newsletter_ajax');
 add_action('wp_ajax_nopriv_trccm_subscribe_newsletter', 'trccm_handle_newsletter_ajax');
 
-function trccm_handle_newsletter_ajax() {
+function trccm_handle_newsletter_ajax()
+{
     if (!isset($_POST['email']) || !is_email($_POST['email'])) {
         wp_send_json_error(['message' => 'Please enter a valid email address.']);
     }
@@ -120,7 +122,8 @@ function trccm_handle_newsletter_ajax() {
 }
 
 
-function trccm_render_newsletter_page() {
+function trccm_render_newsletter_page()
+{
     global $wpdb;
     $table = $wpdb->prefix . 'trccm_newsletter_subscribers';
 
@@ -189,9 +192,10 @@ function trccm_render_newsletter_page() {
 
 
 add_shortcode('trccm_newsletter_form', 'trccm_render_newsletter_form');
-function trccm_render_newsletter_form() {
+function trccm_render_newsletter_form()
+{
     ob_start(); ?>
-    <form id="trccm-newsletter-form" class="flex items-stretch space-x-2" method="post">
+    <form id="trccm-newsletter-form" class="flex items-stretch gap-2 flex-col md:flex-row max-w-[90vw]" method="post">
         <input id="newsletter" type="email" name="newsletter_email" placeholder="Enter your email" required
             class="w-full bg-transparent border border-gray-500 rounded-md px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2" />
         <button type="submit"
@@ -207,34 +211,36 @@ function trccm_render_newsletter_form() {
     <p id="newsletter-response" class="mt-4 text-sm"></p>
 
     <script>
-    document.getElementById('trccm-newsletter-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const emailInput = this.querySelector('[name="newsletter_email"]');
-        const messageBox = document.getElementById('newsletter-response');
-        const email = emailInput.value;
+        document.getElementById('trccm-newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('[name="newsletter_email"]');
+            const messageBox = document.getElementById('newsletter-response');
+            const email = emailInput.value;
 
-        messageBox.textContent = 'Submitting...';
-        messageBox.className = 'mt-4 text-sm text-gray-500';
+            messageBox.textContent = 'Submitting...';
+            messageBox.className = 'mt-4 text-sm text-gray-500';
 
-        fetch('<?php echo admin_url("admin-ajax.php"); ?>', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams({
-                action: 'trccm_subscribe_newsletter',
-                email: email
-            })
-        })
-        .then(res => res.json())
-        .then(data => {
-            messageBox.textContent = data.data.message;
-            messageBox.className = 'mt-4 text-sm ' + (data.success ? 'text-green-600' : 'text-red-600');
-            if (data.success) emailInput.value = '';
-        })
-        .catch(() => {
-            messageBox.textContent = 'Something went wrong. Please try again.';
-            messageBox.className = 'mt-4 text-sm text-red-600';
+            fetch('<?php echo admin_url("admin-ajax.php"); ?>', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({
+                        action: 'trccm_subscribe_newsletter',
+                        email: email
+                    })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    messageBox.textContent = data.data.message;
+                    messageBox.className = 'mt-4 text-sm ' + (data.success ? 'text-green-600' : 'text-red-600');
+                    if (data.success) emailInput.value = '';
+                })
+                .catch(() => {
+                    messageBox.textContent = 'Something went wrong. Please try again.';
+                    messageBox.className = 'mt-4 text-sm text-red-600';
+                });
         });
-    });
     </script>
     <?php return ob_get_clean();
 }
@@ -245,7 +251,8 @@ function trccm_render_newsletter_form() {
 
 
 
-function trccm_render_submissions_page() {
+function trccm_render_submissions_page()
+{
     global $wpdb;
     $table = $wpdb->prefix . 'trccm_contact_submissions';
 
@@ -361,7 +368,8 @@ function trccm_render_submissions_page() {
 add_action('wp_ajax_trccm_submit_contact_form', 'trccm_handle_ajax_form');
 add_action('wp_ajax_nopriv_trccm_submit_contact_form', 'trccm_handle_ajax_form');
 
-function trccm_handle_ajax_form() {
+function trccm_handle_ajax_form()
+{
     global $wpdb;
     $table = $wpdb->prefix . 'trccm_contact_submissions';
 
@@ -389,9 +397,10 @@ function trccm_handle_ajax_form() {
     }
 }
 
-function trccm_render_settings_page () {
+function trccm_render_settings_page()
+{
 
-     echo "Settings Page";
+    echo "Settings Page";
 }
 
 
@@ -400,8 +409,10 @@ function trccm_render_settings_page () {
 
 if (!defined('ABSPATH')) exit;
 
-class common_SEO_Plugin {
-    public function __construct() {
+class common_SEO_Plugin
+{
+    public function __construct()
+    {
         add_action('add_meta_boxes', [$this, 'add_seo_meta_box']);
         add_action('save_post', [$this, 'save_seo_meta']);
         add_action('wp_head', [$this, 'output_seo_meta'], 1);
@@ -410,7 +421,8 @@ class common_SEO_Plugin {
     }
 
     // Add SEO Meta Box to Posts and Pages
-    public function add_seo_meta_box() {
+    public function add_seo_meta_box()
+    {
         $post_types = ['page', 'post'];
         foreach ($post_types as $type) {
             add_meta_box(
@@ -425,38 +437,45 @@ class common_SEO_Plugin {
     }
 
     // SEO Meta Box Content
-    public function seo_meta_box_callback($post) {
+    public function seo_meta_box_callback($post)
+    {
         $seo_title     = get_post_meta($post->ID, '_common_seo_title', true);
         $seo_desc      = get_post_meta($post->ID, '_common_seo_description', true);
         $meta_keywords = get_post_meta($post->ID, '_common_meta_keywords', true);
         $focus_keyword = get_post_meta($post->ID, '_common_focus_keyword', true);
         $robots        = get_post_meta($post->ID, '_common_robots_meta', true);
-        ?>
+    ?>
         <p><label>SEO Title:</label>
-        <input type="text" name="common_seo_title" value="<?php echo esc_attr($seo_title); ?>" style="width:100%;"></p>
+            <input type="text" name="common_seo_title" value="<?php echo esc_attr($seo_title); ?>" style="width:100%;">
+        </p>
 
         <p><label>Meta Description:</label>
-        <textarea name="common_seo_description" rows="3" style="width:100%;"><?php echo esc_textarea($seo_desc); ?></textarea></p>
+            <textarea name="common_seo_description" rows="3" style="width:100%;"><?php echo esc_textarea($seo_desc); ?></textarea>
+        </p>
 
         <p><label>Meta Keywords:</label>
-        <input type="text" name="common_meta_keywords" value="<?php echo esc_attr($meta_keywords); ?>" style="width:100%;">
-        <small>Comma-separated (e.g., sell house fast, home buyers Florida)</small></p>
+            <input type="text" name="common_meta_keywords" value="<?php echo esc_attr($meta_keywords); ?>" style="width:100%;">
+            <small>Comma-separated (e.g., sell house fast, home buyers Florida)</small>
+        </p>
 
         <p><label>Focus Keyword:</label>
-        <input type="text" name="common_focus_keyword" value="<?php echo esc_attr($focus_keyword); ?>" style="width:100%;"></p>
+            <input type="text" name="common_focus_keyword" value="<?php echo esc_attr($focus_keyword); ?>" style="width:100%;">
+        </p>
 
         <p><label>Meta Robots:</label>
-        <select name="common_robots_meta" style="width:100%;">
-            <option value="index, follow" <?php selected($robots, 'index, follow'); ?>>index, follow</option>
-            <option value="noindex, follow" <?php selected($robots, 'noindex, follow'); ?>>noindex, follow</option>
-            <option value="index, nofollow" <?php selected($robots, 'index, nofollow'); ?>>index, nofollow</option>
-            <option value="noindex, nofollow" <?php selected($robots, 'noindex, nofollow'); ?>>noindex, nofollow</option>
-        </select></p>
-        <?php
+            <select name="common_robots_meta" style="width:100%;">
+                <option value="index, follow" <?php selected($robots, 'index, follow'); ?>>index, follow</option>
+                <option value="noindex, follow" <?php selected($robots, 'noindex, follow'); ?>>noindex, follow</option>
+                <option value="index, nofollow" <?php selected($robots, 'index, nofollow'); ?>>index, nofollow</option>
+                <option value="noindex, nofollow" <?php selected($robots, 'noindex, nofollow'); ?>>noindex, nofollow</option>
+            </select>
+        </p>
+    <?php
     }
 
     // Save Meta Fields
-    public function save_seo_meta($post_id) {
+    public function save_seo_meta($post_id)
+    {
         if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
         if (!current_user_can('edit_post', $post_id)) return;
 
@@ -468,7 +487,8 @@ class common_SEO_Plugin {
     }
 
     // Output Meta Tags in <head>
-    public function output_seo_meta() {
+    public function output_seo_meta()
+    {
         global $post;
         if (!is_singular() && !is_front_page()) return;
 
@@ -524,7 +544,8 @@ class common_SEO_Plugin {
     }
 
     // Homepage SEO Settings Admin Page
-    public function add_homepage_seo_menu() {
+    public function add_homepage_seo_menu()
+    {
         add_submenu_page(
             'options-general.php',
             'Homepage SEO',
@@ -535,8 +556,9 @@ class common_SEO_Plugin {
         );
     }
 
-    public function homepage_seo_settings_page() {
-        ?>
+    public function homepage_seo_settings_page()
+    {
+    ?>
         <div class="wrap">
             <h1>Homepage SEO Settings</h1>
             <form method="post" action="options.php">
@@ -550,7 +572,8 @@ class common_SEO_Plugin {
         <?php
     }
 
-    public function register_homepage_seo_settings() {
+    public function register_homepage_seo_settings()
+    {
         register_setting('common_homepage_seo_group', 'common_homepage_seo_title');
         register_setting('common_homepage_seo_group', 'common_homepage_seo_description');
         register_setting('common_homepage_seo_group', 'common_homepage_robots_meta');
@@ -577,14 +600,14 @@ class common_SEO_Plugin {
 
         add_settings_field('common_homepage_robots_meta', 'Meta Robots', function () {
             $value = get_option('common_homepage_robots_meta');
-            ?>
+        ?>
             <select name="common_homepage_robots_meta" style="width:100%;">
                 <option value="index, follow" <?php selected($value, 'index, follow'); ?>>index, follow</option>
                 <option value="noindex, follow" <?php selected($value, 'noindex, follow'); ?>>noindex, follow</option>
                 <option value="index, nofollow" <?php selected($value, 'index, nofollow'); ?>>index, nofollow</option>
                 <option value="noindex, nofollow" <?php selected($value, 'noindex, nofollow'); ?>>noindex, nofollow</option>
             </select>
-            <?php
+<?php
         }, 'common-homepage-seo', 'common_homepage_seo_section');
     }
 }
