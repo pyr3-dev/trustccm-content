@@ -373,29 +373,52 @@ function trccm_handle_ajax_form()
     global $wpdb;
     $table = $wpdb->prefix . 'trccm_contact_submissions';
 
-    // Validate required field
     if (empty($_POST['name'])) {
         wp_send_json_error(['message' => 'Name is required.']);
     }
 
     $data = [
         'name'          => sanitize_text_field($_POST['name']),
-        'business_name' => sanitize_text_field($_POST['business_name']),
-        'website'       => esc_url_raw($_POST['website']),
-        'challenge'     => sanitize_textarea_field($_POST['challenge']),
-        'budget'        => sanitize_text_field($_POST['budget']),
-        'phone'         => sanitize_text_field($_POST['phone']),
+        'business_name' => sanitize_text_field($_POST['business_name'] ?? ''),
+        'website'       => esc_url_raw($_POST['website'] ?? ''),
+        'challenge'     => sanitize_textarea_field($_POST['challenge'] ?? ''),
+        'budget'        => sanitize_text_field($_POST['budget'] ?? ''),
+        'phone'         => sanitize_text_field($_POST['phone'] ?? ''),
     ];
 
-    $inserted = $wpdb->insert($table, $data);
-
-    if ($inserted) {
-        wp_send_json_success(['message' => 'Submitted successfully']);
-    } else {
-        error_log('TRCCM Insert Error: ' . $wpdb->last_error); // log error
-        wp_send_json_error(['message' => 'DB Insert failed']);
+    if (! $wpdb->insert($table, $data)) {
+        error_log('TRCCM Insert Error: ' . $wpdb->last_error);
+        wp_send_json_error(['message' => 'DB insert failed']);
     }
+
+    // --- Email (simple HTML) ---
+    $devto       = 'jjustoe04@gmail.com';
+    $to       = 'zack@trustccm.com';
+    $subject  = 'New Advisory Submission';
+    $headers  = ['Content-Type: text/html; charset=UTF-8'];
+    $body     = '
+        <h2>New Advisory Submission</h2>
+        <ul>
+            <li><strong>Name:</strong> ' . esc_html($data['name']) . '</li>
+            <li><strong>Business:</strong> ' . esc_html($data['business_name']) . '</li>
+            <li><strong>Website:</strong> ' . ($data['website'] ? '<a href="' . esc_url($data['website']) . '">' . esc_html($data['website']) . '</a>' : '—') . '</li>
+            <li><strong>Phone:</strong> ' . esc_html($data['phone']) . '</li>
+            <li><strong>Budget:</strong> ' . esc_html($data['budget']) . '</li>
+            <li><strong>Challenge:</strong><br>' . nl2br(esc_html($data['challenge'])) . '</li>
+        </ul>
+    ';
+
+    if (! wp_mail($to, $subject, $body, $headers)) {
+        error_log('TRCCM Mail Error: wp_mail failed');
+    }
+    if (! wp_mail($devto, $subject, $body, $headers)) {
+        error_log('TRCCM Mail Error: wp_mail failed');
+    }
+
+
+    wp_send_json_success(['message' => 'Submitted successfully']);
 }
+
 
 function trccm_render_settings_page()
 {

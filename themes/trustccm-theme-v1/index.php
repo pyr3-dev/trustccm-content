@@ -28,7 +28,7 @@
         <div class="grid gap-4 md:grid-columns-2">
           <!-- Left Content -->
           <div class="hero-text">
-            <div class="hero-meta" data-aos="fade-right" data-aos-delay="100">50+ million in revenue generated for businesses</div>
+            <div class="hero-meta" data-aos="fade-right" data-aos-delay="100">500+ million in revenue generated for businesses</div>
             <h1 data-aos="fade-down" data-aos-delay="100">We Build Growth Machines.</h1>
             <p data-aos="fade-down" data-aos-delay="100">Led by Zohar Ilinetsky, TRUSTCCM helps founders scale their business, increase sales,
               and build bulletproof infrastructure.</p>
@@ -42,20 +42,24 @@
           <div class="hero-stats" data-aos="fade-left" data-aos-delay="100">
             <div class="stat-card">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/s1.png" alt="">
-              <div><strong>97%</strong> →<br>Increase in online revenue for Europ Assistance</div>
+              <div><strong>3500%</strong> →<br>Raise in sales for construction companies</div>
             </div>
+
             <div class="stat-card">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/s2.png" alt="">
-              <div><strong>200%</strong> →<br>In qualitative leads for Sip well</div>
+              <div><strong>500%</strong> →<br>Scaling growth for the art industry</div>
             </div>
+
             <div class="stat-card">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/s3.png" alt="">
-              <div><strong>70%</strong> →<br>Increase in online market share for ISB</div>
+              <div><strong>25M</strong> →<br>Raises for startups in South East Asia</div>
             </div>
+
             <div class="stat-card">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/s4.png" alt="">
-              <div><strong>210%</strong> →<br>Growth in leads and revenue for Edenred</div>
+              <div><strong>5x</strong> →<br>Revenue for jewelry businesses</div>
             </div>
+
           </div>
         </div>
       </div>
@@ -63,16 +67,9 @@
   </section>
   <section class="text-center py-16 black-bg">
     <h2 class="text-sm tracking-widest text-gray-400 uppercase">Globally Recognized</h2>
-    <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-10">Working With Renowned Brands</h1>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-10 px-8 max-w-6xl mx-auto" data-aos="fade-left" data-aos-delay="100">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/logo/hp.png" alt="HP" class="h-20 mx-auto">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/logo/adobe.png" alt="Adobe" class="h-20 mx-auto">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/logo/western_union.png" alt="Western Union" class="h-20 mx-auto">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/logo/google.png" alt="Google" class="h-20 mx-auto">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/logo/linkedin.png" alt="LinkedIn" class="h-20 mx-auto">
-
-    </div>
+    <h1 class="text-3xl md:text-4xl font-bold mt-2">
+      Working With Renowned Brands <br class="hidden sm:block"> as well as Local Businesses
+    </h1>
   </section>
 
 
@@ -95,11 +92,17 @@
             <div class="w-1 h-24 bg-yellow mt-2" data-aos="grow-vert"></div>
           </div>
           <div>
-            <h3 class="text-xl font-semibold mb-2"> Sales Training & Development</h3>
-            <p class="text-gray-300 mb-4">We'll get to know you, your goals, and business. We’ll provide quick wins to help you accelerate growth and outline next steps</p>
-            <a href="<?php echo home_url('/contact-us'); ?>" class=" hover:underline font-medium inline-flex items-center gap-1 color-yellow">Meet with Us <span>→</span></a>
+            <h3 class="text-xl font-semibold mb-2">Sales Training &amp; Development</h3>
+            <p class="text-gray-300 mb-4">
+              We'll get to know you, your goals, and business. We’ll provide quick wins to help you accelerate growth and outline next steps.
+              In addition, we will create a structured sales process that allows you to scale both your sales teams and their managers effectively.
+            </p>
+            <a href="<?php echo home_url('/contact-us'); ?>" class="hover:underline font-medium inline-flex items-center gap-1 color-yellow">
+              Meet with Us <span>→</span>
+            </a>
           </div>
         </div>
+
 
 
         <div class="flex gap-6 items-start" data-aos="fade-up">
@@ -108,11 +111,17 @@
             <div class="w-1 h-24 bg-yellow mt-2" data-aos="grow-vert"></div>
           </div>
           <div>
-            <h3 class="text-xl font-semibold mb-2"> Business Infrastructure & Systems</h3>
-            <p class="text-gray-300 mb-4">We can work together ongoing or as a one-time project. If ongoing, we’ll build a go-to-market strategy to hit your goals.</p>
-            <a href="<?php echo home_url('/contact-us'); ?>" class="hover:underline font-medium inline-flex items-center gap-1 color-yellow">Get Your Plan <span>→</span></a>
+            <h3 class="text-xl font-semibold mb-2">Business Infrastructure &amp; Systems</h3>
+            <p class="text-gray-300 mb-4">
+              We can provide one-time consultation or an ongoing process that’ll help you grow your business.
+              If ongoing, we’ll build a go-to-market strategy to hit your goals.
+            </p>
+            <a href="<?php echo home_url('/contact-us'); ?>" class="hover:underline font-medium inline-flex items-center gap-1 color-yellow">
+              Get Your Plan <span>→</span>
+            </a>
           </div>
         </div>
+
 
         <!-- Step 3 -->
         <div class="flex gap-6 items-start" data-aos="fade-up">
@@ -131,14 +140,56 @@
         <div class="flex gap-6 items-start" data-aos="fade-up">
           <div class="flex flex-col items-center">
             <span class="text-4xl font-bold text-white">04</span>
+            <div class="w-1 h-48 bg-yellow mt-2" data-aos="grow-vert"></div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Brand Positioning &amp; Social Growth</h3>
+
+            <p class="text-gray-300 mb-3">
+              Content planning with an editorial calendar and clear guardrails for voice, visuals, and cadence—so every post reinforces your brand.
+            </p>
+
+            <ul class="text-gray-300 mb-4 list-decimal list-inside space-y-1">
+              <li>Define goals &amp; audience</li>
+              <li>Map topics &amp; keywords</li>
+              <li>Create outlines &amp; assign owners</li>
+              <li>Produce assets (copy, design, video)</li>
+              <li>Edit &amp; QA against brand guidelines</li>
+              <li>Publish &amp; schedule across channels</li>
+              <li>Repurpose, distribute, engage</li>
+              <li>Measure &amp; iterate (CTR, reach, leads)</li>
+            </ul>
+
+            <a href="<?php echo home_url('/contact-us'); ?>" class="hover:underline font-medium inline-flex items-center gap-1 color-yellow">
+              Let's Go <span>→</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start" data-aos="fade-up">
+          <div class="flex flex-col items-center">
+            <span class="text-4xl font-bold text-white">05</span>
             <div class="w-1 h-24 bg-yellow mt-2" data-aos="grow-vert"></div>
           </div>
           <div>
-            <h3 class="text-xl font-semibold mb-2">Brand Positioning & Social Growth</h3>
+            <h3 class="text-xl font-semibold mb-2">Marketing Strategy Built From Scratch</h3>
 
-            <a href="<?php echo home_url('/contact-us'); ?>" class="hover:underline font-medium inline-flex items-center gap-1 color-yellow">Let's Go<span>→</span></a>
+            <p class="text-gray-300 mb-3">
+              A complete marketing strategy designed from the ground up, tailored to your goals and industry.
+            </p>
+
+            <ul class="text-gray-300 mb-4 list-disc list-inside space-y-1">
+              <li>Restructure social media accounts to attract more followers and generate leads</li>
+              <li>Design or rebuild your website for stronger positioning and higher conversions</li>
+              <li>Create an integrated plan connecting brand, channels, and campaigns</li>
+            </ul>
+
+            <a href="<?php echo home_url('/contact-us'); ?>" class="hover:underline font-medium inline-flex items-center gap-1 color-yellow">
+              Start Strategy <span>→</span>
+            </a>
           </div>
         </div>
+
+
 
 
 
@@ -251,9 +302,12 @@
                 <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold">Lead Generation & Growth Strategy</h3>
+            <h3 class="text-xl font-semibold">Lead Generation &amp; Growth Strategy</h3>
           </div>
-          <p class="mt-3 text-slate-600">We design scalable funnels and a roadmap for long-term sustainable growth.</p>
+          <p class="mt-3 text-slate-600">
+            We design scalable funnels and a roadmap for long-term sustainable growth.
+            And utilise AI tools as well as SEO and other techniques to grow your brand.
+          </p>
         </div>
       </div>
 
@@ -342,7 +396,7 @@
 
       <!-- CTAs -->
       <div class="mt-12 flex flex-col sm:flex-row gap-3" data-aos="fade-up" data-aos-delay="150">
-        <a href="<?php echo home_url('/book-audit'); ?>" class="inline-flex items-center justify-center rounded-md bg-[#ca8a04] px-6 py-3 text-white font-semibold shadow hover:bg-[#a16207]">
+        <a href="<?php echo home_url('/contact-us'); ?>" class="inline-flex items-center justify-center rounded-md bg-[#ca8a04] px-6 py-3 text-white font-semibold shadow hover:bg-[#a16207]">
           Book Your Free Audit
         </a>
         <a href="<?php echo home_url('/advisory'); ?>" class="inline-flex items-center justify-center rounded-md border border-slate-300 text-slate-700 px-6 py-3 font-semibold hover:bg-slate-100">

@@ -37,7 +37,7 @@
 
                     <div class="mt-6 flex flex-col sm:flex-row gap-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" data-aos-once="true">
                         <!-- PRIMARY CTA (gold) -->
-                        <a href="/book-audit"
+                        <a href="/contact-us"
                             class="inline-flex items-center justify-center rounded-xl bg-[#ca8a04] px-6 py-3 text-white font-medium shadow hover:bg-[#a16207] focus:outline-none focus:ring-2 focus:ring-[#ca8a04]/40">
                             Book Your Free Audit
                         </a>
@@ -155,7 +155,7 @@
 
                 <!-- Repeated CTAs -->
                 <div class="flex flex-col sm:flex-row gap-3 pt-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700" data-aos-once="true">
-                    <a href="/book-audit"
+                    <a href="/contact-us"
                         class="inline-flex items-center justify-center rounded-xl bg-[#ca8a04] px-6 py-3 text-white font-medium shadow hover:bg-[#a16207] focus:outline-none focus:ring-2 focus:ring-[#ca8a04]/40">
                         Book Your Free Audit
                     </a>
