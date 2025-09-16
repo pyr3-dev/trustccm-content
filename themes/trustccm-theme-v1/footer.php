@@ -73,42 +73,43 @@
     </div>
 
     <!-- Connect / Socials -------------------------------------------------->
+    <?php
+    // Set your WhatsApp number here (digits only, include country code, e.g., 639171234567)
+    $whatsAppNumber = '+16175817790';
+    $wa_link = 'https://wa.me/' . preg_replace('/\D+/', '', $whatsAppNumber);
+    ?>
     <div>
       <h3 class="font-semibold text-lg mb-4">Connect with <?php bloginfo('name'); ?></h3>
       <p class="text-gray-400 mb-6 max-w-xs">Follow us on social media and stay up to date with our latest insights and growth strategies.</p>
 
-      <div class="flex space-x-2 ">
-
+      <div class="flex space-x-2">
         <!-- Instagram -->
-        <a href="https://www.instagram.com/zak_tandoori" target="_blank" class="p-2 rounded-full border border-gray-500 hover:bg-[#ca8a04] transition">
+        <a href="https://www.instagram.com/zak_tandoori" target="_blank" rel="noopener" aria-label="Instagram"
+          class="p-2 rounded-full border border-gray-500 hover:bg-[#ca8a04] transition">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 .002 6.002A3 3 0 0 0 12 9z" />
           </svg>
         </a>
 
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/zohar-ilinetsky-5768881bb/" target="_blank" class="p-2 rounded-full border border-gray-500 hover:bg-[#ca8a04] transition">
+        <a href="https://www.linkedin.com/in/zohar-ilinetsky-5768881bb/" target="_blank" rel="noopener" aria-label="LinkedIn"
+          class="p-2 rounded-full border border-gray-500 hover:bg-[#ca8a04] transition">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.08 8.5h4.9V24H.08V8.5zM8.32 8.5h4.7v2.1h.07c.65-1.24 2.24-2.54 4.6-2.54 4.92 0 5.83 3.24 5.83 7.45V24h-4.88v-7.5c0-1.79-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 3.97V24h-4.88V8.5z" />
           </svg>
         </a>
-        <!-- Twitter/X -->
-        <!--         <a href="#" class="p-2 rounded-full border border-gray-500 hover:bg-[#ca8a04] transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.05 2.14c-2.6 0-3.92 1.5-3.92 3.5 0 3.1 3 4 6.07 4v1.8c-2.13.19-4.37.51-6.07 1.13 2.13 1.15 4.28 1.27 5.98 1.27v1.8c-2.9 0-5.36-.38-7.55-1.34a19.9 19.9 0 0 1-7.6 1.34v-1.8a13.42 13.42 0 0 0 7.6-1.27 13.22 13.22 0 0 0-7.6-1.13v-1.8c1.76 0 3.55-.12 5.17-.46A19.78 19.78 0 0 1 0 6.34v-1.6a18.49 18.49 0 0 0 9 1.6C9 4.93 10.52 2.14 14 2.14c1.94 0 3.48.66 4.53 1.8l-1.77 1.8a3.52 3.52 0 0 0-2.71-1.6z"/></svg>
-        </a> -->
 
-        <!-- Email -->
-        <a href="mailto:zack@trustccm.com" class="p-2 rounded-full border border-gray-500 hover:bg-[#ca8a04] transition">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2"
-            class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M16.5 6h-9A2.5 2.5 0 005 8.5v7A2.5 2.5 0 007.5 18h9a2.5 2.5 0 002.5-2.5v-7A2.5 2.5 0 0016.5 6zM6 9.75l6 3.75 6-3.75" />
+        <!-- WhatsApp -->
+        <a href="<?php echo esc_url($wa_link); ?>" target="_blank" rel="noopener" aria-label="WhatsApp"
+          class="p-2 rounded-full border border-gray-500 hover:bg-[#ca8a04] transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M19.11 17.42c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.83-2.01-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.85c.14.18 1.93 2.95 4.67 4.13 2.75 1.18 2.75.78 3.24.75.5-.02 1.59-.64 1.81-1.26.23-.61.23-1.14.16-1.26-.07-.11-.25-.18-.52-.32z" />
+            <path d="M16 3C9.38 3 4 8.38 4 15a11.9 11.9 0 0 0 1.64 6L4 29l8-1.6A12.92 12.92 0 0 0 16 27c6.62 0 12-5.38 12-12S22.62 3 16 3zm0 22.7c-1.97 0-3.8-.58-5.34-1.58l-.38-.24-4.24.85.87-4.13-.25-.42A9.7 9.7 0 1 1 25.7 15 9.7 9.7 0 0 1 16 25.7z" />
           </svg>
         </a>
       </div>
     </div>
+
 
   </div><!-- /grid -->
 
