@@ -25,7 +25,7 @@
 
     <div class="hero-overlay">
       <div class="container-video">
-        <div class="grid gap-4 md:grid-columns-2">
+        <div class="grid gap-4 md:grid-cols-2">
           <!-- Left Content -->
           <div class="hero-text">
             <div class="hero-meta" data-aos="fade-right" data-aos-delay="100">500+ million in revenue generated for businesses</div>
