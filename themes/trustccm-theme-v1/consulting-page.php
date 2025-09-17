@@ -93,7 +93,7 @@
       <div class="bg-white p-6 rounded-xl shadow">
         <h3 class="text-xl font-semibold mb-2 text-[#ca8a04]">Proven Results</h3>
         <p class="text-gray-600">
-          We've helped businesses increase revenue by 30%+ through custom growth frameworks.
+          We've helped businesses increase revenue by 3000%+ through custom growth frameworks.
         </p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow">
