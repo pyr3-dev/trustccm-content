@@ -73,7 +73,7 @@
                                         Blog
                                     </a>
                                 </li> -->
-                                <li>
+                                <!-- <li>
                                     <a href="#newsletter" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                                         <span class="sr-only">Newsletter</span>
                                         <svg class="w-4 h-4 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -81,7 +81,7 @@
                                         </svg>
                                         Newsletter
                                     </a>
-                                </li>
+                            </li> -->
 
                                 <li>
                                     <a href="<?php echo home_url('/services'); ?>" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
